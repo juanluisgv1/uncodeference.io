@@ -46,7 +46,7 @@ const Title = styled(Text) `
   font-size: 24px; 
   color: ${styles.colors.background};
   background-color: ${styles.colors.accent};
-  padding: 5px;
+  padding: 6px 15px 4px 15px;
 `;
 
 const Link = styled.a`
