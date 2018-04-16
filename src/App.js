@@ -67,20 +67,12 @@ const Icon = styled.svg`
   fill: ${styles.colors.accentLight}
   height: 20px;
   margin: 1em 0;
-`
+`;
 
 const Spacer = () => (<span className="spacer">&nbsp;&middot;&nbsp;</span>);
 
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-
-    if (window.location.pathname === '/rsvp') {
-      window.location.href = 'https://uncodeferenceio.eventbrite.de';
-    }
-  }
 
   render() {
     return (
