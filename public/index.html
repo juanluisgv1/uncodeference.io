@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" style="height:100%">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta property="og:title" content="The unconference for web development in Tirol" />
-    <meta property="og:description" content="The event is focused on bringing together the best web developers and
-    the most well-known startups from Tirol to discuss new technologies, different development-related topics,
-    and current issues." />
-    <meta property="og:image" content="" />
-    <meta name="theme-color" content="#000000" />
-    <meta property="og:site_name" content="uncodeference">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+  <title>uncodeference.io</title>
+
+  <!-- Search Engine -->
+  <meta name="description" content="The event is focused on bringing together the best web developers and the most well-known startups from Tyrol to discuss new technologies, different development-related topics and current issues.">
+
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="The unconference for web development in Tyrol">
+  <meta itemprop="description" content="The event is focused on bringing together the best web developers and the most well-known startups from Tyrol to discuss new technologies, different development-related topics and current issues.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The unconference for web development in Tyrol">
+  <meta name="twitter:description" content="The event is focused on bringing together the best web developers and the most well-known startups from Tyrol to discuss new technologies, different development-related topics and current issues.">
+  <meta name="twitter:site" content="uncodeference">
+  <meta name="twitter:image:src" content="https://uncodeference.io/meta-preview.jpg">
+
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="The unconference for web development in Tyrol">
+  <meta name="og:description" content="The event is focused on bringing together the best web developers and the most well-known startups from Tyrol to discuss new technologies, different development-related topics and current issues.">
+  <meta name="og:image" content="https://uncodeference.io/meta-preview.jpg">
+  <meta name="og:url" content="https://uncodeference.io/">
+  <meta name="og:site_name" content="uncodeference">
+  <meta name="og:type" content="website">
+
+  <!--
+    manifest.json provides metadata used when your web app is added to the
+    homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+  -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="theme-color" content="#000000" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -27,23 +45,23 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>uncodeference.io</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116940462-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116940462-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-116940462-1');
-    </script>
+    gtag('config', 'UA-116940462-1');
+  </script>
 
 
-  </head>
-  <body style="height:100%">
-    <div id="root" style="height:100%"></div>
-    <!--
+</head>
+
+<body style="height:100%">
+  <div id="root" style="height:100%"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -53,5 +71,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
