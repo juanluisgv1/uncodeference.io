@@ -34,6 +34,10 @@ const TextBreaking = styled(Text) `
   align-items: center;
   justify-content: center;
 
+  >a {
+    margin: 0;
+  }
+
   @media only screen and (max-device-width: 320px) {
     .spacer {
       display: none;
