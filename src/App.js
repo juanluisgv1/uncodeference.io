@@ -13,6 +13,7 @@ const Wrapper = styled.section`
   height: 100%;
   width: 100%;
   background-color: ${styles.colors.background};
+  padding: 1rem;
   
   display: flex;
   align-items: center;
@@ -24,6 +25,21 @@ const Text = styled.p`
   color: ${styles.colors.accentLight};
   font-size: 17px;
   font-family: "Courier new", monospace;
+  text-align: center;
+`;
+
+const TextBreaking = styled(Text) `
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-device-width: 320px) {
+    .spacer {
+      display: none;
+    }
+    flex-direction: column;
+  }
 `;
 
 const Title = styled(Text) ` 
@@ -53,6 +69,8 @@ const Icon = styled.svg`
   margin: 1em 0;
 `
 
+const Spacer = () => (<span className="spacer">&nbsp;&middot;&nbsp;</span>);
+
 
 class App extends Component {
 
@@ -69,7 +87,7 @@ class App extends Component {
       <Wrapper>
         <Title>un<i>code</i>ference.io</Title>
         <Text>The free web development <Link href="http://unconference.net/unconferencing-how-to-prepare-to-attend-an-unconference/">unconference</Link> in Austria</Text>
-        <Text><Link href="https://www.google.com/maps/place/Werkstätte+Wattens/@47.287262,11.5905719,17z/data=!3m1!4b1!4m5!3m4!1s0x479d6467027ebc8d:0x97e24643b15d2bec!8m2!3d47.2872584!4d11.5927606">Wattens, Tyrol</Link> &middot; May 25th, 2018</Text>
+        <TextBreaking><Link href="https://www.google.com/maps/place/Werkstätte+Wattens/@47.287262,11.5905719,17z/data=!3m1!4b1!4m5!3m4!1s0x479d6467027ebc8d:0x97e24643b15d2bec!8m2!3d47.2872584!4d11.5927606">Wattens, Tyrol</Link><Spacer /><span>May 25th, 2018</span></TextBreaking>
         <LinkImportant href="https://uncodeferenceio.eventbrite.de"><b>RSVP</b></LinkImportant>
         <Link href="http://confcodeofconduct.com/">Code of Conduct</Link>
         <a href="https://twitter.com/uncodeference" target="_blank" rel="noopener noreferrer">
