@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-// import Header from './components/Header';
-
-import './App.css';
-
 const styles = {
   colors: {
     accent: 'papayawhip',
