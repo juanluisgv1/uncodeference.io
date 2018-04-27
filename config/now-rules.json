@@ -1,6 +1,6 @@
 {
   "rules": [
     { "pathname": "/rsvp", "method": ["GET"], "dest": "https://uncodeferenceio.eventbrite.de" },
-    { "dest": "https://build-zmsrsqzzns.now.sh" }
+    { "dest": "https://build-hkoiomtypl.now.sh" }
   ]
 }
