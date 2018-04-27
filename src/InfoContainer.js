@@ -16,8 +16,8 @@ const view = [
   { id: 3, view: () => <Sponsors />},
 ];
 
-const InfoContainer = () => {
-  const page = view.find(x => x.id == this.props.page);
+const InfoContainer = (props) => {
+  const page = view.find(x => x.id == props.page);
   return page.view();
 };
 
