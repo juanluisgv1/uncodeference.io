@@ -5,7 +5,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 // constants
-import styles from './constants';
+import constants from './constants';
+import {
+  Text,
+  Link
+} from './styles';
 
 const Wrapper = styled.section`
   max-height: 400px;
@@ -17,25 +21,9 @@ const Wrapper = styled.section`
   align-items: flex-start;
 `;
 
-const Text = styled.p`
-  color: ${styles.colors.accentLight};
-  font-size: 17px;
-  font-family: "Courier new", monospace;
-  max-width: 800px;
-`;
-
 const Title = styled(Text) ` 
   font-weight: bold;
   letter-spacing: 0.1em;
-`;
-
-const Link = styled.a`
-  color: ${styles.colors.accentLight};
-  font-size: 17px;
-  font-family: "Courier new", monospace;
-  text-decoration: none;
-  border-bottom: .5px dotted ${styles.colors.accentLight};
-  margin: 1em 0;
 `;
 
 
@@ -48,10 +36,31 @@ const Home = () => (
       The sessions convened will range from the formal to the informal:
       * From the well thought out pre-prepared talk reflecting years of research and practice to the spur of the moment ‘new idea’ that would be fun to talk about.
       * From the demonstration of a working tool to the whiteboarding of something completely new.
+
+      Read more about <Link target="_blank" href="http://unconference.net/unconferencing-how-to-prepare-to-attend-an-unconference/">here</Link>
     </Text>
-    <Text>
-      Read more about <Link href="http://unconference.net/unconferencing-how-to-prepare-to-attend-an-unconference/">here</Link>
-    </Text>
+
+    <Title>> How is the schedule?</Title>
+    <Text> Start: 8:30 </Text>
+    <Text> Finish: 18:00 </Text>
+
+    <Text> --------------- </Text>
+
+    <Text> Session 1: 9:00 </Text>
+    <Text> Session 2: 10:00 </Text>
+    <Text> Session 3: 11:00 </Text>
+    <Text> Session 3: 12:00 </Text>
+
+    <Text> ---- break ---- </Text>
+
+    <Text> Session 5: 14:00 </Text>
+    <Text> Session 6: 15:00 </Text>
+    <Text> Session 7: 16:00 </Text>
+    <Text> Session 8: 17:00 </Text>
+
+    <Text> ---- Networking ---- </Text>
+
+    <Text> … more information soon … </Text>
   </Wrapper>
 )
 
