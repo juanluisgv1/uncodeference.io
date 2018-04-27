@@ -7,7 +7,6 @@ import styled from 'styled-components';
 // constants
 import styles from './constants';
 
-
 const Wrapper = styled.section`
   max-height: 400px;
   overflow: scroll;
@@ -35,18 +34,6 @@ const Link = styled.a`
   margin: 1em 0;
 `;
 
-const LinkImportant = styled(Link) `
-  font-weight: bold;
-  margin: 2em 0;
-`;
-
-const Icon = styled.svg`
-  fill: ${styles.colors.accentLight}
-  height: 20px;
-  margin: 1em 0;
-`;
-
-const Spacer = () => (<span className="spacer">&nbsp;&middot;&nbsp;</span>);
 
 const Home = () => (
   <Wrapper>

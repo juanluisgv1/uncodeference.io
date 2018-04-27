@@ -35,7 +35,7 @@ const Link = styled.a`
   margin: 1em 0;
 `;
 
-const Home = () => (
+const Sponsors = () => (
   <Wrapper>
     <Title> > Who is sponsoring this?</Title>
     <Text> <Link href="https://gronda.eu/home/"> Gronda </Link> --> Organization + IT</Text>
@@ -44,4 +44,4 @@ const Home = () => (
   </Wrapper>
 )
 
-export default Home;
+export default Sponsors;
