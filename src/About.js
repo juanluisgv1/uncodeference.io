@@ -10,13 +10,17 @@ import styles from './constants';
 const Wrapper = styled.section`
   max-height: 400px;
   overflow: scroll;
+  
+  
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
 `;
 
 const Text = styled.p`
   color: ${styles.colors.accentLight};
   font-size: 17px;
   font-family: "Courier new", monospace;
-  text-align: center;
   max-width: 800px;
 `;
 
@@ -37,7 +41,7 @@ const Link = styled.a`
 
 const Home = () => (
   <Wrapper>
-    <Title> > What is an unconference?</Title>
+    <Title>> What is an unconference?</Title>
     <Text>
       The unconference* format creates space for peer-to-peer learning, collaboration and creativity.
       At the start, the whole group will gather together and be guided through creating an agenda using open space technology. The exact process is not important to understand in advance – the process will become clear as it happens. The important part is that all those gathered will have the opportunity to put conference sessions on the agenda. No session will be voted off or ‘won’t happen’ for some other reason. All sessions are welcome!

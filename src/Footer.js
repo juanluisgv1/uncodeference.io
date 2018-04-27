@@ -33,7 +33,8 @@ const menu = [
   { id: 1, text: ' · home '},
   { id: 2, text: ' · about '},
   { id: 3, text: ' · sponsors '},
-  ];
+  { id: 4, text: ' · startUps '},
+];
 
 class Footer extends Component {
 
