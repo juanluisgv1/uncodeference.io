@@ -8,17 +8,18 @@ import styled from 'styled-components';
 import Home from './Home';
 import Sponsors from './Sponsors';
 import About from './About';
+import Companies from './Companies';
 
 
-const view = [
-  { id: 1, view: () => <Home />},
-  { id: 2, view: () => <About />},
-  { id: 3, view: () => <Sponsors />},
+const pages = [
+  { view: () => <Home />},
+  { view: () => <About />},
+  { view: () => <Sponsors />},
+  { view: () => <Companies />},
 ];
 
 const InfoContainer = (props) => {
-  const page = view.find(x => x.id == props.page);
-  return page.view();
+  return pages[props.page - 1].view();
 };
 
 export default InfoContainer;
