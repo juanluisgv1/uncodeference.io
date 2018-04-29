@@ -9,7 +9,7 @@ export const About = () => (
   <React.Fragment>
     <PageTitle />
     <PageWrapper>
-      <Title>What is an unconference?</Title>
+      <Title>What is an unconference? <span role="img" aria-label="hearty-eyes">😍</span></Title>
       <LongText>
         <p>The unconference* format creates space for peer-to-peer learning, collaboration and creativity.</p>
         <p>At the start, the whole group will gather together and be guided through creating an agenda using open space technology. The exact process is not important to understand in advance – the process will become clear as it happens. The important part is that all those gathered will have the opportunity to put conference sessions on the agenda. No session will be voted off or ‘won’t happen’ for some other reason. All sessions are welcome!</p>
