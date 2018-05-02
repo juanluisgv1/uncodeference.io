@@ -22,7 +22,7 @@ const FooterItem = styled(Text) `
   display: flex;
   flex-direction: row;
   padding: 5px 10px;
-  @media only screen and (max-device-width: 320px) {
+  @media only screen and (max-device-width: 425px) {
     flex-direction: column;
   }
 `;
