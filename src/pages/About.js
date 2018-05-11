@@ -19,6 +19,19 @@ export const About = () => (
           <li>From the demonstration of a working tool to the whiteboarding of something completely new.</li>
         </ul>
         <p>Read more about it <Link target="_blank" href="http://unconference.net/unconferencing-how-to-prepare-to-attend-an-unconference/">here</Link>.</p>
+      
+      </LongText>
+      <Spacer />
+      
+      <Title>Basic info / QA</Title>
+      <LongText>
+      <p><b>Do I need to give a talk?</b></p>
+      <p>No, you don't have to. You can just come and have fun or you can come up with some cool topics.</p>
+      <p><b>Do I need to pay something?</b></p>
+      <p>No, you don't have to. Our sponsors are taking care that you focus in what is really important.</p>
+      <p><b>Which kind of topics will I find during the un-conference?</b></p>
+      <p>So far we have heard of people interested in giving a talk about all these topics: GraphQL, Graph Databases, Docker, UnitTesting, React, Angular, Functional programming, SEO, etc </p>
+      <p>it's a huge variety of topics :)</p>
       </LongText>
 
       <Spacer />
@@ -43,7 +56,6 @@ export const About = () => (
 
       <Text> ---- Networking ---- </Text>
 
-      <Text> … more information soon … </Text>
     </PageWrapper>
   </React.Fragment>
 )
